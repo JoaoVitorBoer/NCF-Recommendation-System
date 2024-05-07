@@ -1,1 +1,1 @@
-# Neural Collaborative Filtering - Recommendation System
+# Neural network-based Collaborative Filtering - Recommendation System
