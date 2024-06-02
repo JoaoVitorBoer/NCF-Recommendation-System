@@ -1,4 +1,4 @@
-# Neural network-based Collaborative Filtering with Jester Dataset- Recommendation System
+# Neural network-based Collaborative Filtering with Jester Dataset - Recommendation System
 
 ## Overview
 
@@ -46,7 +46,7 @@ The Jester dataset, developed by Ken Goldberg and his team at UC Berkeley, is us
 - `neumf-config.yaml`: Configuration file for the NeuMF model.
 
 ## Usage
-
+  to do
 ## Configuration
 
 The model configuration is stored in `neumf-config.yaml`. You can modify this file to change the model parameters.
