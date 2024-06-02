@@ -1,0 +1,32 @@
+NeuMF:
+  epochs: 20
+  batch_size: 1024
+  learning_rate: 0.001
+  loss: "mean_squared_error"
+  output_layer_activation: 'linear'
+  optimizer: "sgd"
+  metrics: ["mae"]
+
+  MLP:
+    epochs: 20
+    batch_size: 256
+    learning_rate: 0.001
+    optimizer: "adam"
+    loss: "mean_squared_error"
+    output_layer_activation: 'linear'
+    metrics: ["mae"]
+    layers: [64, 32, 16] # Must follow a "Tower" structure 
+    num_layers: 3
+    embedding_out_dim: 32 # layers[0] / 2 
+    model_parameters_path: "./models/weights/mlp.h5"
+    
+  GMF:
+    epochs: 20
+    batch_size: 256
+    learning_rate: 0.001
+    optimizer: "adam"
+    loss: "mean_squared_error"
+    output_layer_activation: 'linear'
+    metrics: ["mae"]
+    factors: 16 # Must be equal to layers[-1]
+    model_parameters_path: "./models/weights/gmf.h5"
