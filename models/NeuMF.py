@@ -5,7 +5,7 @@ from typing import Tuple
 import numpy as np
 from models.MLP import MLP
 from models.GMF import GMF
-
+import os
 
 class NeuMF:
     def __init__(self, config: dict, num_users: int, num_items: int) -> None:
@@ -56,7 +56,7 @@ class NeuMF:
         out_layer = Dense(1, activation=self.output_layer_activation, name='out_layer')(pred_vector)
 
         model = Model(inputs=[self.user_input, self.item_input], outputs=out_layer, name='neural_matrix_factorization')
-        self.save_model_summary(model)
+        #self.save_model_summary(model)
 
         return model
     
@@ -95,9 +95,9 @@ class NeuMF:
 
         return neumf_model        
         
-    def save_model_summary(self, model: Model) -> None:
-        with open('../data/summaries/neumf_model_summary.txt', 'w') as f:
-            model.summary(print_fn=lambda x: f.write(x + '\n'))
+    def save_model_summary(self, model: Model):
+        with open('./data/summaries/neumf_model_summary.txt', 'w') as f:
+            model.summary(print=lambda x: f.write(x + '\n'))
 
     def train_MLP(self, mlp_model: Model, user_train,  item_train, y_train, eval_data):
         print('-------- Training MLP --------')

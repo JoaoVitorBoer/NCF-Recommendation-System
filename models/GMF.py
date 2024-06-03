@@ -40,7 +40,7 @@ class GMF:
 
         out_layer = Dense(1, activation=self.output_layer_activation, name='out_layer')(gmf_vector)
         model = Model(inputs=[self.user_input, self.item_input], outputs=out_layer, name='generalized_matrix_factorization')
-        self.save_model_summary(model)
+        #self.save_model_summary(model)
 
         return model
        
@@ -54,5 +54,5 @@ class GMF:
         return model
     
     def save_model_summary(self, model: Model) -> None:
-        with open('../data/summaries/gmf_model_summary.txt', 'w') as f:
+        with open('./data/summaries/gmf_model_summary.txt', 'w') as f:
             model.summary(print_fn=lambda x: f.write(x + '\n'))

@@ -45,7 +45,7 @@ class MLP:
 
         out_layer = Dense(1, activation=self.output_layer_activation, name='out_layer')(mlp_vector)
         model = Model(inputs=[self.user_input, self.item_input], outputs=out_layer, name='multi_layer_perceptron')
-        self.save_model_summary(model)
+        #self.save_model_summary(model)
 
         return model
     
