@@ -18,7 +18,7 @@ NeuMF:
     layers: [64, 32, 16] # Must follow a "Tower" structure 
     num_layers: 3
     embedding_out_dim: 32 # layers[0] / 2 
-    model_parameters_path: "../data/weights/mlp.h5"
+    model_parameters_path: "./data/weights/mlp.h5"
     
   GMF:
     epochs: 20
@@ -29,4 +29,4 @@ NeuMF:
     output_layer_activation: 'linear'
     metrics: ["mae"]
     factors: 16 # Must be equal to layers[-1]
-    model_parameters_path: "../data/weights/gmf.h5"
+    model_parameters_path: "./data/weights/gmf.h5"
