@@ -38,12 +38,15 @@ The Jester dataset, developed by Ken Goldberg and his team at UC Berkeley, is us
 - `notebooks`: Contains Jupyter notebooks for data preprocessing and dataset building.
   - `preprocess.ipynb`: Notebook for data preprocessing.
   - `build_dataset.ipynb`: Notebook for building the dataset structure.
-  - `train.ipynb`: Notebook for training the recommendation model.
 - `models`: Contains the implementation of different models used in NCF.
   - `GMF.py`: Implementation of Generalized Matrix Factorization.
   - `MLP.py`: Implementation of Multi-Layer Perceptron.
   - `NeuMF.py`: Implementation of Neural Matrix Factorization.
 - `neumf-config.yaml`: Configuration file for the NeuMF model.
+- `app.py`: Implementation for UI.
+- `recommend.py`: Methods for recommending to users.
+- `train.ipynb`: Notebook for training the recommendation model.
+- `utils`: Extra methods.
 
 ## Usage
   to do
