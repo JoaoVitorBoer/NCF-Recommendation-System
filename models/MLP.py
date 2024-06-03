@@ -60,5 +60,5 @@ class MLP:
     
 
     def save_model_summary(self, model: Model) -> None:
-        with open('./models/summaries/mlp_model_summary.txt', 'w') as f:
+        with open('../data/summaries/mlp_model_summary.txt', 'w') as f:
             model.summary(print_fn=lambda x: f.write(x + '\n'))

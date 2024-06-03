@@ -1,12 +1,7 @@
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-import warnings
-warnings.filterwarnings('ignore')
 from keras.models import Model
 from keras.layers import Input, Embedding, Flatten, Dense, Multiply
 from keras.optimizers import Adam, SGD
-from sklearn.metrics import mean_absolute_error
 from typing import Tuple
 
 class GMF:
@@ -59,5 +54,5 @@ class GMF:
         return model
     
     def save_model_summary(self, model: Model) -> None:
-        with open('./models/summaries/gmf_model_summary.txt', 'w') as f:
+        with open('../data/summaries/gmf_model_summary.txt', 'w') as f:
             model.summary(print_fn=lambda x: f.write(x + '\n'))
