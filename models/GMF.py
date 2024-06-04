@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 from keras.models import Model
 from keras.layers import Input, Embedding, Flatten, Dense, Multiply
 from keras.optimizers import Adam, SGD

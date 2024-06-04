@@ -5,7 +5,7 @@ from typing import Tuple
 import numpy as np
 from models.MLP import MLP
 from models.GMF import GMF
-import os
+
 
 class NeuMF:
     def __init__(self, config: dict, num_users: int, num_items: int) -> None:
