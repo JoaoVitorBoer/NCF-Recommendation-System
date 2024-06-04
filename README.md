@@ -8,7 +8,7 @@ This project implements a recommendation system using the Neural Collaborative F
 
 ### Jester Dataset
 
-The Jester dataset, developed by Ken Goldberg and his team at UC Berkeley, is used in this project. The Jester system delivers jokes via an HTML client interface. Users rate these jokes, and upon completing all ratings in the gauge set, the system recommends new jokes based on user preferences.
+The Jester[https://eigentaste.berkeley.edu/dataset/] dataset, developed by Ken Goldberg and his team at UC Berkeley, is used in this project. The Jester system delivers jokes via an HTML client interface. Users rate these jokes, and upon completing all ratings in the gauge set, the system recommends new jokes based on user preferences.
 
 **Dataset Details:**
 - **Ratings Range**: -10.00 to +10.00, indicating user preferences.
@@ -53,6 +53,8 @@ The Jester dataset, developed by Ken Goldberg and his team at UC Berkeley, is us
 ## Configuration
 
 The model configuration is stored in `neumf-config.yaml`. You can modify this file to change the model parameters.
+
+## Methods
 
 ### Short Example Configuration for Continous Rating Task(`neumf-config.yaml`)
 
